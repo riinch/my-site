@@ -8,11 +8,14 @@
             background-color: #000; 
             margin: 0; 
             display: flex; 
+            flex-direction: column;
             justify-content: center; 
             align-items: center; 
             height: 100vh; 
             font-family: 'Arial Black', Gadget, sans-serif; 
+            gap: 30px;
         }
+
         a { 
             color: #ff0000; 
             text-decoration: none; 
@@ -22,14 +25,40 @@
             padding: 20px 50px; 
             transition: 0.3s; 
         }
+
         a:hover { 
             background-color: #ff0000; 
             color: #000; 
             box-shadow: 0 0 50px #ff0000; 
         }
+
+        /* 🔥 ОКНО С САЙТОМ */
+        .frame-box {
+            width: 90%;
+            max-width: 1000px;
+            height: 600px;
+            border: 3px solid #ff0000;
+            box-shadow: 0 0 30px #ff0000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
+
 <body>
+
     <a href="https://discord.gg/nwjhMyXDzT">GULAG</a>
+
+    <!-- 🔥 ВОТ ОКНО С САЙТОМ -->
+    <div class="frame-box">
+        <iframe src="https://warzoneloadout.games/warzone-meta/"></iframe>
+    </div>
+
 </body>
 </html>
