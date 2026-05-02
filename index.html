@@ -7,36 +7,20 @@
         body { 
             background-color: #000; 
             margin: 0; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center; 
-            align-items: center; 
             height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
             font-family: 'Arial Black', Gadget, sans-serif; 
-            gap: 30px;
+            gap: 50px;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
-        a { 
-            color: #ff0000; 
-            text-decoration: none; 
-            font-size: 100px; 
-            letter-spacing: 10px; 
-            border: 5px solid #ff0000; 
-            padding: 20px 50px; 
-            transition: 0.3s; 
-        }
-
-        a:hover { 
-            background-color: #ff0000; 
-            color: #000; 
-            box-shadow: 0 0 50px #ff0000; 
-        }
-
-        /* 🔥 ОКНО С САЙТОМ */
+        /* ЛЕВАЯ ЧАСТЬ - ОКНО */
         .frame-box {
-            width: 90%;
-            max-width: 1000px;
-            height: 600px;
+            width: 70%;
+            height: 900px; /* 👈 в 2 раза выше */
             border: 3px solid #ff0000;
             box-shadow: 0 0 30px #ff0000;
             border-radius: 10px;
@@ -48,16 +32,51 @@
             height: 100%;
             border: none;
         }
+
+        /* ПРАВАЯ ЧАСТЬ - ССЫЛКА */
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .label {
+            color: #ff0000;
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+
+        a { 
+            color: #ff0000; 
+            text-decoration: none; 
+            font-size: 60px; 
+            letter-spacing: 5px; 
+            border: 5px solid #ff0000; 
+            padding: 20px 40px; 
+            transition: 0.3s; 
+        }
+
+        a:hover { 
+            background-color: #ff0000; 
+            color: #000; 
+            box-shadow: 0 0 50px #ff0000; 
+        }
     </style>
 </head>
 
 <body>
 
-    <a href="https://discord.gg/nwjhMyXDzT">GULAG</a>
-
-    <!-- 🔥 ВОТ ОКНО С САЙТОМ -->
+    <!-- ЛЕВОЕ ОКНО -->
     <div class="frame-box">
         <iframe src="https://warzoneloadout.games/warzone-meta/"></iframe>
+    </div>
+
+    <!-- ПРАВАЯ ЧАСТЬ -->
+    <div class="right">
+        <div class="label">DISCORD</div>
+        <a href="https://discord.gg/nwjhMyXDzT">GULAG</a>
     </div>
 
 </body>
